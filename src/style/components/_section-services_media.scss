@@ -1,0 +1,21 @@
+@media (max-width: 768px) {
+    .services {
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 576px) {
+    .tabs {
+        &-item {
+            width: 125px;
+        }
+        &-wrapper {
+            flex-direction: column;
+            padding: 0 20px;
+        }
+        .tabheader {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}

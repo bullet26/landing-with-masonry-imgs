@@ -1,0 +1,15 @@
+.footer {
+    padding: 48px 0;
+    background-color: $footer-bgc;
+
+    &-text {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 26px;
+        text-align: center;
+        color: $footer-text-c;
+        span {
+            color: $main-color;
+        }
+    }
+}

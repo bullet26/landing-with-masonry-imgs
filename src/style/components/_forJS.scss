@@ -1,0 +1,31 @@
+.hide {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
+
+.active {
+    background: $main-color;
+    position: relative;
+    color: #ffffff;
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -7px;
+        left: 50%;
+        width: 15px;
+        height: 15px;
+        rotate: -45deg;
+        background-color: $main-color;
+    }
+}
+
+.errorMessage {
+    display: block;
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    margin: 18px auto 0 auto;
+}

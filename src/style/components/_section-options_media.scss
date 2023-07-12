@@ -1,0 +1,27 @@
+@media (max-width: 992px) {
+    .options {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+        &-item {
+            min-height: 360px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .options {
+        padding: 0 20px;
+        column-gap: 20px;
+        &-item {
+            &-descr {
+                font-size: 17px;
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .options {
+        grid-template-columns: 1fr;
+        row-gap: 15px;
+    }
+}

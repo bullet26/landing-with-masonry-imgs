@@ -1,0 +1,35 @@
+.section-title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    color: $grey;
+
+    &-invert {
+        color: $second-color;
+    }
+}
+
+.lines {
+    position: relative;
+    margin-top: 26px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 75.54px;
+        height: 1px;
+        background-color: $main-color;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        left: 48%;
+        top: 6px;
+        width: 75.54px;
+        height: 1px;
+        background-color: $main-color;
+    }
+}

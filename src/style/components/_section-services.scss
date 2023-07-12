@@ -1,0 +1,49 @@
+.services {
+    margin-top: 92px;
+    display: flex;
+    justify-content: center;
+}
+
+.tabs {
+    margin-top: 68px;
+
+    &-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        width: 195px;
+        height: 75px;
+        background-color: $tabs-bgc;
+        border: 1.5px solid transparent;
+        cursor: pointer;
+        &:hover {
+            border: 1.5px solid $main-color;
+        }
+    }
+
+    &-wrapper {
+        margin-top: 27px;
+        justify-content: space-between;
+        gap: 13px;
+    }
+
+    &-img {
+        width: 192px;
+        height: 139px;
+        object-fit: cover;
+    }
+
+    &-descr {
+        font-weight: 300;
+        font-size: 13.645px;
+        line-height: 24px;
+        color: $grey;
+    }
+}
+
+.tabheader {
+    display: flex;
+    justify-content: space-between;
+}

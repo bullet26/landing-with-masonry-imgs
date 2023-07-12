@@ -1,0 +1,103 @@
+.gallery {
+    padding: 107px 0 67px;
+    display: flex;
+    justify-content: center;
+}
+
+.grid {
+    margin: 72px 0 52px;
+    /* clearfix */
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    /* ---- .grid-item ---- */
+    &-sizer,
+    &-item {
+        width: 32%;
+        margin-bottom: 5px;
+    }
+
+    &-item {
+        float: left;
+
+        img {
+            max-width: 100%;
+            cursor: pointer;
+        }
+
+        &-show:hover,
+        &-api:hover {
+            .over-card {
+                display: flex;
+            }
+        }
+    }
+
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.subgrid {
+    width: 32%;
+
+    &-item {
+        float: left;
+    }
+
+    &-item,
+    &-sizer {
+        width: 1%;
+        margin-bottom: 5px;
+
+        &-width1 {
+            width: 33%;
+            max-height: 92px;
+        }
+
+        &-width2 {
+            width: 49%;
+        }
+
+        img {
+            max-width: 100%;
+            cursor: pointer;
+        }
+
+        &:hover {
+            .over-card {
+                display: flex;
+            }
+        }
+    }
+}
+
+.over-card {
+    background: rgba(0, 0, 0, 0.64);
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 19px;
+
+    cursor: pointer;
+
+    &-item {
+        width: 27px;
+        height: 25px;
+        background-color: $over-card-item-c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

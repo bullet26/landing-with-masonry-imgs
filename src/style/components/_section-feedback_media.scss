@@ -1,0 +1,26 @@
+@media (max-width: 768px) {
+    .slider {
+        &-item {
+            &-text {
+                padding: 0 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .slider {
+        &-item {
+            &-text {
+                padding: 0 20px;
+            }
+        }
+        &-wrapper {
+            &-indicators {
+                .arrow {
+                    display: none;
+                }
+            }
+        }
+    }
+}

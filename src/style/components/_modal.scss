@@ -1,0 +1,34 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.55);
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85vh;
+    height: 85vh;
+    background-color: black;
+    border: 3px solid $main-color;
+    border-radius: 25px;
+    box-shadow: 2px 3px 39px 23px rgba(0, 0, 0, 1);
+}
+
+.show-modal {
+    visibility: visible;
+}
+
+.full-size {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
